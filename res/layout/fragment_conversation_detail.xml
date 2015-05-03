@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content" 
+  android:background="@drawable/background_activated" >
+
+    <TextView
+        android:id="@+id/conversation_talk_to_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="18sp"
+        android:text="Person Name" />
+
+    <TextView
+        android:id="@+id/conversation_last_seen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Yesterday" />
+
+    <TextView
+        android:id="@+id/conversation_last_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/conversation_talk_to_person"
+        android:text="This is the last message" />
+
+</RelativeLayout>
